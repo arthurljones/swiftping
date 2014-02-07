@@ -1,0 +1,41 @@
+high priority:
+
+	gracefully handle all potential io errors
+	popup warning for oversized sheets
+	popup if export/etc failed
+	popup asking to save before creating new/opening/closing project
+	named reference points (for attaching anims, etc)
+	more tooltips
+
+medium priority:
+
+	BUG: Fix triangulation code so that shared verts are exactly the same (they aren't always closed on the export side)
+	BUG: Render progress bar doesn't ever finish (particularly noticable for short anims)
+	better spritesheet packing (go find an algorithm for packing rectangles)
+	Create circle collision primitives
+	new project button (opens swf chooser)
+	cut framerate/process less when in the background (currently a CPU hog)
+	drag and drop of swf files onto app
+	multiple shape creation
+	zoom in anim preview window
+	click/drag to pan in anim preview window
+	BUG: current frame slider and spinbox are off by one on the max end (+1)
+
+long term:
+
+	app-wide preferences settings
+	auto-export all items in a directory tree from the command line (with timestamping)
+	generation of multiple scales of sheets on export with runtime choosing of appropriate scale
+	splitting animations that go over the 2048x2048 budget onto multiple images with seamless loading at runtime
+
+project manager:
+
+	[Importers] import a variety of sources to create [Images] and [Animations]
+	[Animators] combine [Images] into [Animations] using data such as framerate and loop type/count
+	[Animations] can be combined into logical [Animation Sets] for organization
+	[Particle Emitters] can be created from multiple [Animations] with various parameters for emitting drawables
+	[Shapes] can be drawn and attached to other objects, mainly for collision
+	[Animations] and [Animation Sets] can have [Children], such as other [Animations], [Shapes], and [Particle Emitters], which
+		are attached with various metadata like offset, scale, rotation, duration, etc
+	[Exporters] export data about all the above types of constructions to various formats
+

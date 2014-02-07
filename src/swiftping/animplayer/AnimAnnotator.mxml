@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/mx" 
+		  xmlns:ap="swiftping.animplayer.*"
+		  width="400" height="300"
+		  initialize="controller.Initialize(this)">
+	
+	<fx:Script>
+		<![CDATA[
+			import swiftping.animplayer.AnimController
+			[Bindable] public var controller:AnimController = new AnimController();
+		]]>
+	</fx:Script>
+	
+	<fx:Binding source="currentFrameStepper.value" destination="controller.animPlayer.currentFrame" twoWay="true"/>
+	<fx:Binding source="currentFrameSlider.value" destination="controller.animPlayer.currentFrame" twoWay="true"/>
+	<fx:Binding source="collisionRadio.selected" destination="controller.collisionEditor.enabled" twoWay="true"/>
+	<fx:Binding source="referenceRadio.selected" destination="controller.animPlayer.enabled" twoWay="true"/>
+	
+	<s:HGroup width="100%" verticalAlign="middle">
+		<s:VGroup>
+			<s:Label text="Frame:" verticalAlign="bottom"/>
+			<s:HGroup>
+				<s:NumericStepper id="currentFrameStepper" width="55" minimum="0"
+								  maximum="{controller.animPlayer.frameCount}"
+								  enabled="{controller.animPlayer.frameSequence} == null"
+								  mouseDown="controller.animPlayer.playing = false"/>	
+				<s:Button id="pauseToggle" width="35" label="{controller.animPlayer.playing  ? '&#10073;&#10073;' : '&#9654;'}"
+						  click="controller.animPlayer.playing = !controller.animPlayer.playing"/>				
+			</s:HGroup>
+			<s:HSlider id="currentFrameSlider" width="100%" minimum="0" stepSize="1" showDataTip="false" liveDragging="true"
+					   maximum="{controller.animPlayer.frameCount}"
+					   enabled="{controller.animPlayer.frameSequence} == null"
+					   mouseDown="controller.animPlayer.playing = false"/>
+		</s:VGroup>
+		<s:Spacer width="30"/>
+		<s:VGroup>
+			<s:RadioButton id="referenceRadio" label="Set Reference Point"/>
+			<s:RadioButton id="collisionRadio" label="Edit Collision"/>
+		</s:VGroup>
+		<s:Spacer width="30"/>
+		<s:Button id="clearCollisionButton" label="Clear Collsion" click="controller.collisionEditor.clear()"/>
+		<s:Spacer width="30"/>
+		<s:Label id="animStats" text="" verticalAlign="middle"/>
+	</s:HGroup>
+	
+	<s:Scroller id = "scroller" width="100%" height="100%">
+		<s:HGroup id="scrollArea" width="100%" height="100%">
+			<s:Image id="animImage"/>
+		</s:HGroup>
+	</s:Scroller>
+	
+</s:VGroup>

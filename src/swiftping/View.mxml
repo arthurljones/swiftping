@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<s:Window xmlns:fx="http://ns.adobe.com/mxml/2009"
+					   xmlns:s="library://ns.adobe.com/flex/spark"
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   xmlns:ap="swiftping.animplayer.*"
+					   xmlns:swiftping="swiftping.*"
+					   xmlns:logcombo="swiftping.logcombo.*"
+					   width="1000" height="700"
+					   windowComplete="onWindowComplete()">
+	
+	<fx:Style>
+		@namespace s "library://ns.adobe.com/flex/spark";
+		@namespace mx "library://ns.adobe.com/flex/mx";
+		.VBoxOuterStyle { paddingLeft: 10; paddingRight:10; }
+		.VBoxInnerStyle { borderStyle: solid; paddingLeft: 5; paddingRight: 5; paddingTop: 5; paddingBottom: 5; }
+		.HBoxStyle { verticalAlign: middle; }
+		.FieldLabelStyle { verticalAlign: middle; textAlign: right; }
+	</fx:Style>
+	
+	<fx:Script>
+		<![CDATA[
+			import swiftping.utils.ExtendedObjectProxy;
+			import swiftping.utils.Log;
+			
+			[Bindable] public var mController:Controller = null;
+			[Bindable] public var mData:ExtendedObjectProxy = null;
+			
+			protected function onWindowComplete():void
+			{
+				Log.registerLogListener(function(text:String):void
+				{
+					logArea.text = text;
+					logArea.scrollToRange(text.length);
+				})
+			}
+		]]>
+	</fx:Script>
+	<s:states>
+		<s:State name="Default"/>
+	</s:states>
+	
+	<!-- Control value to data bindings -->
+	<fx:Binding source="mLoopType.selectedIndex" destination="mData.loopTypeIndex" twoWay="true"/>
+	<fx:Binding source="mLoopCount.value" destination="mData.loopCount" twoWay="true"/>
+	<fx:Binding source="mFps.value" destination="mAnimAnnotator.controller.animPlayer.frameRate"/>
+	<fx:Binding source="mFps.value" destination="mData.framerate" twoWay="true"/>
+	<fx:Binding source="mAnimAnnotator.controller.animPlayer.referencePoint" destination="mData.referencePoint" twoWay="true"/>
+	<fx:Binding source="mAnimAnnotator.controller.collisionEditor.shapes" destination="mData.shapes" twoWay="true"/>
+	<fx:Binding source="mAutoReload.selected" destination="mData.autoReload" twoWay="true"/>
+	<fx:Binding source="mExportOnReload.selected" destination="mData.exportOnReload" twoWay="true"/>
+	
+	<fx:Binding source="mController.mFrames" destination="mAnimAnnotator.controller.animPlayer.frameSequence"/>
+	<fx:Binding source="mController.mRenderer" destination="mRenderProgress.source"/>
+
+	<mx:VBox width="100%" height="100%">
+		
+		<mx:VBox width="100%" styleName="VBoxOuterStyle" paddingTop="10">
+			<mx:VBox width="100%" styleName="VBoxInnerStyle">
+				<mx:HBox width="100%" styleName="HBoxStyle">
+					<s:Label text="Current Project:" styleName="FieldLabelStyle"/>
+					<s:Label id="mSettingsName" width="100%" text="{mData.diskLocation}"/>
+					<s:Button id="mOpenButton" width="65" label="Open" click="mController.OpenProject()"/>
+					<s:Button id="mSaveButton" width="65" label="Save"
+							  click="mController.SaveProject()" enabled="{mData.relativeInput}"/>
+					<s:Button id="mSaveAsButton" width="65" label="Save As"
+							  click="mController.SaveProjectAs()" enabled="{mData.relativeInput}"/>
+				</mx:HBox>	
+			</mx:VBox>	
+		</mx:VBox>
+		
+		<mx:VBox width="100%" styleName="VBoxOuterStyle">
+			<mx:VBox width="100%" styleName="VBoxInnerStyle">
+				<mx:HBox width="100%" styleName="HBoxStyle">
+					<s:Label width="100" text="SWF Input:" styleName="FieldLabelStyle"/>
+					<s:Button id="mChooseSwfButton" width="80" label="Choose" click="mController.ChooseSWF()"
+							  toolTip="Open a file selector dialog to choose a SWF file to import and render to a spritesheet"/>
+					<s:Label id="mSwfLabel" width="100%" verticalAlign="middle" text="{mData.relativeInput} ({mData.fullInputPath})"
+							 toolTip="The currently chosen SWF file"/>
+				</mx:HBox>
+				
+				<mx:HBox width="100%" styleName="HBoxStyle" enabled="{mData.relativeInput}">
+					<s:Label width="100" text="Output Directory:" styleName="FieldLabelStyle"/>
+					<s:Button id="mChooseOutput" width="80" label="Choose" click="mController.ChooseOutputDir()"
+							  toolTip="Open a file selector dialog to choose where exported files should be written"/>
+					<s:Label id="mOutputLabel" width="100%" verticalAlign="middle" text="{mData.relativeOutput} ({mData.fullOutputPath})"
+							 toolTip="The currently chosen output directory"/>
+				</mx:HBox>
+				
+				<mx:HBox width="100%" styleName="HBoxStyle" enabled="{mData.relativeInput}">
+					<s:Label width="100" text="Output Prefix:" styleName="FieldLabelStyle"/>
+					<s:TextInput id="mOutputPrefix" text="{mData.outputPrefix}"
+								 toolTip="The prefix to use for the exported files"/>
+					<s:Spacer width="100%"/>
+					<s:CheckBox id="mAutoReload" label="Automatic Reload"
+								toolTip="Automatically reload the input file when it has changed on disk."/>
+					<s:CheckBox id="mExportOnReload" label="Export on Reload"
+								toolTip="Automatically export the spritesheet and data once it has been reloaded from disk"/>
+					<s:Button id="mReloadButton" width="80" label="Reload" click="mController.reload()"
+							  toolTip="Reload and rerender the input file"/>
+					<s:Button id="mExportButton" width="80" label="Export" click="mController.Export()"
+							  toolTip="Export the spritesheet and data file to the target directory"/>
+				</mx:HBox>
+			</mx:VBox>
+		</mx:VBox>
+	
+		<mx:VBox width="100%" styleName="VBoxOuterStyle">
+			<mx:VBox width="100%" styleName="VBoxInnerStyle" enabled="{mController.mFrames != null}">
+				<mx:HBox width="100%" styleName="HBoxStyle">
+					<s:Label text="FPS:" styleName="FieldLabelStyle"/>
+					<s:NumericStepper id="mFps" minimum="1" maximum="60" value="60"/>
+					<s:Label text="Loop:" styleName="FieldLabelStyle"/>
+					<s:DropDownList id="mLoopType" width="126" requireSelection="true" dataProvider="{mController.mLoopTypes}"/>
+					<s:Label text="Count:" styleName="FieldLabelStyle"/>
+					<s:NumericStepper id="mLoopCount" minimum="1" enabled="{mData.loopCountEnabled}"/>
+				</mx:HBox>	
+			</mx:VBox>
+		</mx:VBox>
+		
+		<mx:HBox width="100%" height="100%">
+			<mx:VBox width="100%" height="100%" styleName="VBoxOuterStyle" enabled="{mData.relativeInput}">
+				<s:HGroup verticalAlign="middle">
+					<s:Label text="Render Progress:" verticalAlign="middle"/>
+					<mx:ProgressBar id="mRenderProgress" width="100%" label=" " labelPlacement="center" source="mController.mRenderer"/>
+					<s:Spacer width="10"/>
+					<s:Label id="mSheetStatistics" verticalAlign="middle" text="{mController.mSheetStats}"/>
+				</s:HGroup>
+				<ap:AnimAnnotator top="2" left="2" width="100%" height="100%" id="mAnimAnnotator"
+								  enabled="{mController.mFrames != null}"/>
+			</mx:VBox>
+		</mx:HBox>
+		
+		<mx:HBox width="100%">
+			<mx:VBox width="100%" height="100%" styleName="VBoxOuterStyle">
+				<s:TextArea id="logArea" width="100%" heightInLines="3" text="" editable="false"/>
+			</mx:VBox>
+		</mx:HBox>
+		
+	</mx:VBox>
+</s:Window>
