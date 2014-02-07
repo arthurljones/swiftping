@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <s:Window xmlns:fx="http://ns.adobe.com/mxml/2009"
-					   xmlns:s="library://ns.adobe.com/flex/spark"
-					   xmlns:mx="library://ns.adobe.com/flex/mx"
-					   xmlns:ap="swiftping.animplayer.*"
-					   xmlns:swiftping="swiftping.*"
-					   xmlns:logcombo="swiftping.logcombo.*"
-					   width="1000" height="700"
-					   windowComplete="onWindowComplete()">
+          xmlns:s="library://ns.adobe.com/flex/spark"
+          xmlns:mx="library://ns.adobe.com/flex/mx"
+          xmlns:ap="swiftping.animplayer.*"
+          xmlns:swiftping="swiftping.*"
+          xmlns:logcombo="swiftping.logcombo.*"
+          width="1000" height="700"
+          windowComplete="onWindowComplete()">
 	
 	<fx:Style>
 		@namespace s "library://ns.adobe.com/flex/spark";

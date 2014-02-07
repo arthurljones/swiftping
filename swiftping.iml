@@ -4,23 +4,6 @@
     <configurations>
       <configuration name="SwiftPing" target-platform="Desktop" main-class="SwiftPing" output-file="SwiftPing.swf" output-folder="$MODULE_DIR$/bin-debug">
         <dependencies>
-          <entries>
-            <entry library-id="37d05323-bdb2-482b-aa67-18806574e1e0">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="064deb4f-b09c-4633-a071-30756952a036">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="d3c3cfe0-f97a-451f-8806-0425c37eb447">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="049fb5ae-7ee9-4da3-b818-32c14851e31a">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="5ea28c12-412d-49c3-a13e-8a42244e3a1d">
-              <dependency linkage="Merged" />
-            </entry>
-          </entries>
           <sdk name="flex" />
         </dependencies>
         <compiler-options>
@@ -28,16 +11,7 @@
             <entry key="compiler.locale" value="en_US" />
           </map>
         </compiler-options>
-        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/SwiftPing-app.xml" package-file-name="SwiftPing">
-          <files-to-package>
-            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/swiftping/utils/._.DS_Store" path-in-package="swiftping/utils/._.DS_Store" />
-            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/swiftping/logcombo/._enums" path-in-package="swiftping/logcombo/._enums" />
-            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/swiftping/logcombo/._renderers" path-in-package="swiftping/logcombo/._renderers" />
-            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/swiftping/logcombo/._formatters" path-in-package="swiftping/logcombo/._formatters" />
-            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/swiftping/._logcombo" path-in-package="swiftping/._logcombo" />
-          </files-to-package>
-          <AirSigningOptions keystore-path="$MODULE_DIR$/../air-dist-cert.p12" use-temp-certificate="false" />
-        </packaging-air-desktop>
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/SwiftPing-app.xml" package-file-name="SwiftPing" />
         <packaging-android />
         <packaging-ios />
       </configuration>
@@ -51,61 +25,6 @@
     </content>
     <orderEntry type="jdk" jdkName="flex" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="37d05323-bdb2-482b-aa67-18806574e1e0" />
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/libs" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="064deb4f-b09c-4633-a071-30756952a036" />
-        <CLASSES>
-          <root url="file://$FLEXUNIT_LIB_LOCATION$/version4libs/Common" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$FLEXUNIT_LIB_LOCATION$/version4libs/Common" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="d3c3cfe0-f97a-451f-8806-0425c37eb447" />
-        <CLASSES>
-          <root url="file://$FLEXUNIT_LIB_LOCATION$/version4libs/FlexProject" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$FLEXUNIT_LIB_LOCATION$/version4libs/FlexProject" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="049fb5ae-7ee9-4da3-b818-32c14851e31a" />
-        <CLASSES>
-          <root url="file://$FLEXUNIT_LIB_LOCATION$/version4libs/FlexProject_Extended" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$FLEXUNIT_LIB_LOCATION$/version4libs/FlexProject_Extended" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="5ea28c12-412d-49c3-a13e-8a42244e3a1d" />
-        <CLASSES>
-          <root url="file://$FLEXUNIT_LOCALE_LOCATION$/version4locale" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$FLEXUNIT_LOCALE_LOCATION$/version4locale/" recursive="false" />
-      </library>
-    </orderEntry>
   </component>
 </module>
 
