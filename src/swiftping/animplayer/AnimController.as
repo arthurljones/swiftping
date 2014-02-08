@@ -1,41 +1,42 @@
 package swiftping.animplayer
 {
-    import flash.events.EventDispatcher;
-    import flash.geom.Rectangle;
+    import flash.events.EventDispatcher
+    import flash.geom.Rectangle
 
-    import mx.events.PropertyChangeEvent;
+    import mx.events.PropertyChangeEvent
 
     public class AnimController extends EventDispatcher
     {
-        import flash.display.BitmapData;
-        import flash.events.Event;
-        import flash.events.MouseEvent;
-        import flash.geom.Matrix;
-        import flash.geom.Point;
+        import flash.display.BitmapData
+        import flash.events.Event
+        import flash.events.MouseEvent
+        import flash.geom.Matrix
+        import flash.geom.Point
 
-        import mx.events.ResizeEvent;
+        import mx.events.ResizeEvent
 
         ///////////////////////////////////////////////////////////////////////
         // Public Variables
-        [Bindable] public var clearColor:uint;
-        [Bindable] public var animPlayer:AnimPlayer = new AnimPlayer();
-        [Bindable] public var collisionEditor:CollisionEditor = new CollisionEditor();
+
+        ;[Bindable] public var clearColor:uint
+        ;[Bindable] public var animPlayer:AnimPlayer = new AnimPlayer()
+        ;[Bindable] public var collisionEditor:CollisionEditor = new CollisionEditor()
 
         ///////////////////////////////////////////////////////////////////////
         // Public Functions
         public function Initialize(view:AnimAnnotator, width:uint = 1024, height:uint = 1024):void
         {
-            mView = view;
+            mView = view
 
-            clearColor = 0xFFFF7FFF;
-            mBitmapData = new BitmapData(width, height);
-            mBitmapData.fillRect(mBitmapData.rect, clearColor);
-            mView.animImage.source = mBitmapData;
+            clearColor = 0xFFFF7FFF
+            mBitmapData = new BitmapData(width, height)
+            mBitmapData.fillRect(mBitmapData.rect, clearColor)
+            mView.animImage.source = mBitmapData
 
-            SetupTransforms();
+            SetupTransforms()
 
-            mView.scroller.addEventListener(ResizeEvent.RESIZE, CenterView);
-            mView.addEventListener(Event.ENTER_FRAME, EnterFrame);
+            mView.scroller.addEventListener(ResizeEvent.RESIZE, CenterView)
+            mView.addEventListener(Event.ENTER_FRAME, EnterFrame)
 
             var events:Array = [
                 MouseEvent.MOUSE_MOVE,
@@ -46,98 +47,98 @@ package swiftping.animplayer
                 MouseEvent.RIGHT_MOUSE_DOWN,
                 MouseEvent.RIGHT_MOUSE_UP,
                 MouseEvent.MOUSE_WHEEL
-            ];
+            ]
 
             for each (var event:String in events)
-                mView.animImage.addEventListener(event, OnMouseActivity);
+                mView.animImage.addEventListener(event, OnMouseActivity)
 
             function setStatText(e:Event = null):void
             {
-                var bounds:Rectangle = animPlayer.bounds;
+                var bounds:Rectangle = animPlayer.bounds
                 mView.animStats.text = "Reference Point: (" + animPlayer.referencePoint.x + ", " + animPlayer.referencePoint.y +
-                    ")\nBounds Size: (" + bounds.width + ", " + bounds.height + ")";
+                    ")\nBounds Size: (" + bounds.width + ", " + bounds.height + ")"
             }
 
-            animPlayer.addEventListener("sequenceChanged", setStatText);
+            animPlayer.addEventListener("sequenceChanged", setStatText)
             animPlayer.addEventListener(PropertyChangeEvent.PROPERTY_CHANGE, setStatText); //TODO: Bit overkill to call for every prop change
 
-            AddPlugin(animPlayer);
-            AddPlugin(collisionEditor);
+            AddPlugin(animPlayer)
+            AddPlugin(collisionEditor)
 
-            animPlayer.enabled = true;
+            animPlayer.enabled = true
         }
 
         ///////////////////////////////////////////////////////////////////////
         // Private Variables
-        private var mBitmapData:BitmapData = null;
-        private var mView:AnimAnnotator = null;
-        private var mLastTicks:Number = 0;
-        private var mDrawRequested:Boolean = true;
-        private var mPlugins:Vector.<IAnimPlugin> = new Vector.<IAnimPlugin>();
+        private var mBitmapData:BitmapData = null
+        private var mView:AnimAnnotator = null
+        private var mLastTicks:Number = 0
+        private var mDrawRequested:Boolean = true
+        private var mPlugins:Vector.<IAnimPlugin> = new Vector.<IAnimPlugin>()
 
-        public var mImageToScreen:Matrix = new Matrix();
-        public var mScreenToImage:Matrix = new Matrix();
+        public var mImageToScreen:Matrix = new Matrix()
+        public var mScreenToImage:Matrix = new Matrix()
 
         ///////////////////////////////////////////////////////////////////////
         // Private Functions
         private function AddPlugin(plugin:IAnimPlugin):void
         {
-            plugin.addEventListener(AnimAnnotatorEvents.DRAW_REQUEST, DrawRequested);
-            plugin.addEventListener(AnimAnnotatorEvents.RESET_VIEW_REQUEST, ResetViewRequested);
+            plugin.addEventListener(AnimAnnotatorEvents.DRAW_REQUEST, DrawRequested)
+            plugin.addEventListener(AnimAnnotatorEvents.RESET_VIEW_REQUEST, ResetViewRequested)
 
-            mPlugins.push(plugin);
+            mPlugins.push(plugin)
         }
 
         private function DrawRequested(e:Event):void
         {
-            mDrawRequested = true;
+            mDrawRequested = true
         }
 
         private function ResetViewRequested(e:Event):void
         {
-            CenterView();
+            CenterView()
         }
 
         private function SetupTransforms():void
         {
-            mImageToScreen = new Matrix();
-            mImageToScreen.translate(mBitmapData.width * 0.5, mBitmapData.height * 0.5);
+            mImageToScreen = new Matrix()
+            mImageToScreen.translate(mBitmapData.width * 0.5, mBitmapData.height * 0.5)
 
-            mScreenToImage = mImageToScreen.clone();
-            mScreenToImage.invert();
+            mScreenToImage = mImageToScreen.clone()
+            mScreenToImage.invert()
         }
 
         private function CenterView(e:ResizeEvent = null):void
         {
-            var scrollX:Number = (mBitmapData.width - mView.scroller.width) * 0.5;
-            var scrollY:Number = (mBitmapData.height - mView.scroller.height) * 0.5;
+            var scrollX:Number = (mBitmapData.width - mView.scroller.width) * 0.5
+            var scrollY:Number = (mBitmapData.height - mView.scroller.height) * 0.5
 
-            mView.scrollArea.horizontalScrollPosition = scrollX;
-            mView.scrollArea.verticalScrollPosition = scrollY;
+            mView.scrollArea.horizontalScrollPosition = scrollX
+            mView.scrollArea.verticalScrollPosition = scrollY
         }
 
         private function EnterFrame(e:Event):void
         {
             if (mDrawRequested)
             {
-                mBitmapData.fillRect(mBitmapData.rect, clearColor);
+                mBitmapData.fillRect(mBitmapData.rect, clearColor)
 
                 for each (var plugin:IAnimPlugin in mPlugins)
-                    plugin.draw(mBitmapData, mImageToScreen);
+                    plugin.draw(mBitmapData, mImageToScreen)
 
-                mView.animImage.validateNow();
+                mView.animImage.validateNow()
             }
         }
 
         private function OnMouseActivity(e:MouseEvent):void
         {
-            var point:Point = mScreenToImage.transformPoint(new Point(e.localX, e.localY));
-            e.localX = point.x;
-            e.localY = point.y;
+            var point:Point = mScreenToImage.transformPoint(new Point(e.localX, e.localY))
+            e.localX = point.x
+            e.localY = point.y
 
             for each (var plugin:IAnimPlugin in mPlugins)
                 if (plugin.isEnabled())
-                    plugin.onMouseActivity(e);
+                    plugin.onMouseActivity(e)
         }
     }
 }

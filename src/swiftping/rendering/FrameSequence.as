@@ -1,53 +1,53 @@
 package swiftping.rendering
 {
-    import flash.display.BitmapData;
-    import flash.geom.Rectangle;
+    import flash.display.BitmapData
+    import flash.geom.Rectangle
 
     public dynamic class FrameSequence
     {
-        import flash.geom.Point;
+        import flash.geom.Point
 
-        public var frames:Vector.<Frame> = new Vector.<Frame>();
+        public var frames:Vector.<Frame> = new Vector.<Frame>()
 
         //TODO: clone()
 
         public function get minimumVisibleBounds():Rectangle
         {
-            var minBounds:Rectangle = new Rectangle;
+            var minBounds:Rectangle = new Rectangle
             for each (var frame:Frame in frames)
             {
-                var frameBounds:Rectangle = frame.visibleBounds;
-                frameBounds.x -= frame.origin.x;
-                frameBounds.y -= frame.origin.y;
-                minBounds = minBounds.union(frameBounds);
+                var frameBounds:Rectangle = frame.visibleBounds
+                frameBounds.x -= frame.origin.x
+                frameBounds.y -= frame.origin.y
+                minBounds = minBounds.union(frameBounds)
             }
-            return minBounds;
+            return minBounds
         }
 
         public function set origin(value:Point):void
         {
             for each(var frame:Frame in frames)
-                frame.origin = value;
+                frame.origin = value
         }
 
         public function AddFrame(image:BitmapData):Frame
         {
-            var frame:Frame = new Frame(image);
-            frames.push(frame);
-            return frame;
+            var frame:Frame = new Frame(image)
+            frames.push(frame)
+            return frame
         }
 
         public function DisposeImages():void
         {
             for each (var frame:Frame in frames)
-                frame.dispose();
+                frame.dispose()
         }
 
         public function Crop(rect:Rectangle):void
         {
             for each(var frame:Frame in frames)
             {
-                frame.crop(rect);
+                frame.crop(rect)
             }
         }
 
@@ -57,10 +57,10 @@ package swiftping.rendering
             {
                 if (frame.image)
                 {
-                    var bounds:Rectangle = frame.visibleBounds;
-                    bounds.width = bounds.width || 1;
-                    bounds.height = bounds.height || 1;
-                    frame.crop(bounds);
+                    var bounds:Rectangle = frame.visibleBounds
+                    bounds.width = bounds.width || 1
+                    bounds.height = bounds.height || 1
+                    frame.crop(bounds)
                 }
             }
         }
@@ -71,38 +71,38 @@ package swiftping.rendering
                 function (frame1:Frame, frame2:Frame):int
                 {
                     if (frame1.image.height < frame2.image.height)
-                        return 1;
+                        return 1
                     else if (frame2.image.height < frame1.image.height)
-                        return -1;
+                        return -1
                     else
-                        return 0;
+                        return 0
                 }
-            );
+            )
         }
 
         public function ExtractUniqueFrames(dispose:Boolean = true):FrameSequence
         {
-            var uniques:FrameSequence = new FrameSequence();
+            var uniques:FrameSequence = new FrameSequence()
 
             for each (var frame:Frame in frames)
             {
-                var uniqueImage:Frame = null;
+                var uniqueImage:Frame = null
                 for each (var unique:Frame in uniques.frames)
                 {
                     if (frame.hasSameImageAs(unique))
                     {
-                        uniqueImage = unique;
-                        break;
+                        uniqueImage = unique
+                        break
                     }
                 }
 
                 if (!uniqueImage)
-                    uniqueImage = uniques.AddFrame(frame.image);
+                    uniqueImage = uniques.AddFrame(frame.image)
 
-                frame.surrogate = uniqueImage;
+                frame.surrogate = uniqueImage
             }
 
-            return uniques;
+            return uniques
         }
     }
 }

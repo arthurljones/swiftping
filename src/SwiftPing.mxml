@@ -10,28 +10,28 @@
 	
 	<fx:Script>
 		<![CDATA[
-			import swiftping.Controller;
-			import swiftping.utils.Log;
-			import mx.controls.Alert;
+			import swiftping.Controller
+			import swiftping.utils.Log
+			import mx.controls.Alert
 			
-			public var controller:swiftping.Controller = null;
+			public var controller:swiftping.Controller = null
 			
 			public function complete():void
 			{			
-				Log.log("App startup");
-				NativeApplication.nativeApplication.addEventListener(InvokeEvent.INVOKE, onInvoke);
+				Log.log("App startup")
+				NativeApplication.nativeApplication.addEventListener(InvokeEvent.INVOKE, onInvoke)
 				flash.media.SoundMixer.soundTransform = new SoundTransform(0);	//Disable sound lest annoying flash clips may bother users
-				stage.frameRate = 10000;
+				stage.frameRate = 10000
 				
-				loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onUncaughtError);
+				loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onUncaughtError)
 			}
 			
 			private function onInvoke(e:InvokeEvent):void
 			{
-				Log.log("Invoke event: (" + e.currentDirectory.nativePath + "): " + e.arguments);
+				Log.log("Invoke event: (" + e.currentDirectory.nativePath + "): " + e.arguments)
 				if (controller == null)
 				{
-					controller = new Controller(e.arguments, e.currentDirectory);
+					controller = new Controller(e.arguments, e.currentDirectory)
 				}
 				else
 				{
@@ -42,14 +42,14 @@
 			private function onUncaughtError(e:UncaughtErrorEvent):void
 			{
 				
-				Alert.show("error", "Unhandled Error!");
+				Alert.show("error", "Unhandled Error!")
 				if (e.error is Error)
 				{
-					var error:Error = e.error as Error;
-					var errorMessage:String = error.getStackTrace();
-					Alert.show(errorMessage, "Unhandled Error!");
-					Log.log(errorMessage);
-					//NativeApplication.nativeApplication.exit(1);
+					var error:Error = e.error as Error
+					var errorMessage:String = error.getStackTrace()
+					Alert.show(errorMessage, "Unhandled Error!")
+					Log.log(errorMessage)
+					//NativeApplication.nativeApplication.exit(1)
 				}
 			}
 		]]>

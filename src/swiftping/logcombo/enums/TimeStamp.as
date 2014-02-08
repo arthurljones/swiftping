@@ -11,14 +11,14 @@
     */
     public class TimeStamp
     {
-        public var text :String;
+        public var text :String
         {CStringUtils.InitEnumConstants(TimeStamp);} // static ctor
 
-        public static const NONE        :TimeStamp = new TimeStamp();
-        public static const TIME        :TimeStamp = new TimeStamp();
-        public static const DDMMYYYY    :TimeStamp = new TimeStamp();
-        public static const MMDDYYYY    :TimeStamp = new TimeStamp();
-        public static const FULL        :TimeStamp = new TimeStamp();
-        public static const SEMIFULL    :TimeStamp = new TimeStamp();
+        public static const NONE        :TimeStamp = new TimeStamp()
+        public static const TIME        :TimeStamp = new TimeStamp()
+        public static const DDMMYYYY    :TimeStamp = new TimeStamp()
+        public static const MMDDYYYY    :TimeStamp = new TimeStamp()
+        public static const FULL        :TimeStamp = new TimeStamp()
+        public static const SEMIFULL    :TimeStamp = new TimeStamp()
     }
 }

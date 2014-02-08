@@ -8,7 +8,7 @@ package swiftping.utils
             {
                 if (destinationObject.hasOwnProperty(property))
                 {
-                    destinationObject[property] = sourceObject[property];
+                    destinationObject[property] = sourceObject[property]
                 }
             }
         }

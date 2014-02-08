@@ -24,12 +24,12 @@
 
     public class LogType
     {
-        public var text :String;
+        public var text :String
         {CStringUtils.InitEnumConstants(LogType);} // static ctor
 
-        public static const TEXT        :LogType = new LogType();
-        public static const OBJECT        :LogType = new LogType();
-        public static const DATA        :LogType = new LogType();
-        public static const EVENT        :LogType = new LogType();
+        public static const TEXT        :LogType = new LogType()
+        public static const OBJECT        :LogType = new LogType()
+        public static const DATA        :LogType = new LogType()
+        public static const EVENT        :LogType = new LogType()
     }
 }

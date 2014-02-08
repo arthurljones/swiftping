@@ -64,23 +64,123 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CoronaExporter.as" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/swiftping/export/CoronaExporter.as">
+      <file leaf-file-name="Controller.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/Controller.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="37" selection-start="615" selection-end="615" vertical-scroll-proportion="-1.2892442" vertical-offset="1187" max-vertical-offset="1875">
+            <state line="69" column="9" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="7980">
               <folding>
-                <element signature="e#31#59#0" expanded="true" />
-                <element signature="e#241#264#0" expanded="true" />
+                <element signature="e#24#55#0" expanded="true" />
+                <element signature="e#477#515#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/swiftping/Controller.as">
+      <file leaf-file-name="Settings.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/Settings.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7560">
+            <state line="2" column="39" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1350">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SwiftPing.mxml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SwiftPing.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="28" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.63182527" vertical-offset="150" max-vertical-offset="960">
+              <folding>
+                <marker date="1391820363000" expanded="true" signature="323:401" placeholder="..." />
+                <marker date="1391820363000" expanded="true" signature="501:887" placeholder="{...}" />
+                <marker date="1391820363000" expanded="true" signature="944:1175" placeholder="{...}" />
+                <marker date="1391820363000" expanded="true" signature="1063:1136" placeholder="{...}" />
+                <marker date="1391820363000" expanded="true" signature="1150:1170" placeholder="{...}" />
+                <marker date="1391820363000" expanded="true" signature="1246:1560" placeholder="{...}" />
+                <marker date="1391820363000" expanded="true" signature="1327:1555" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Triangulator.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/shapes/Triangulator.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="42" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="1755" max-vertical-offset="2475">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BindingDebugger.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/utils/BindingDebugger.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="36" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="combinePaths.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/utils/combinePaths.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dispatchPropertyChangeEvent.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/utils/dispatchPropertyChangeEvent.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enumerateObjectProperties.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/utils/enumerateObjectProperties.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtendedObjectProxy.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/utils/ExtendedObjectProxy.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="32" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3915">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SwfRenderer.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/SwfRenderer.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1376" max-vertical-offset="2310">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shallowCopyObject.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/utils/shallowCopyObject.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrameSequence.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/FrameSequence.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="13" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
+              <folding>
+                <element signature="e#34#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,8 +199,20 @@
         <option value="$PROJECT_DIR$/src/swiftping/View.mxml" />
         <option value="$PROJECT_DIR$/swiftping.iml" />
         <option value="$PROJECT_DIR$/src/SwiftPing-app.xml" />
-        <option value="$PROJECT_DIR$/src/swiftping/Controller.as" />
         <option value="$PROJECT_DIR$/src/swiftping/export/CoronaExporter.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/Controller.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/animplayer/AnimAnnotatorEvents.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/animplayer/AnimController.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/animplayer/AnimPlayer.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/animplayer/CollisionEditor.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/logcombo/LogComboBox.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/rendering/FrameSequence.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/rendering/Frame.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/shapes/Triangulator.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/utils/BindingDebugger.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/utils/ExtendedObjectProxy.as" />
+        <option value="$PROJECT_DIR$/src/swiftping/Settings.as" />
+        <option value="$PROJECT_DIR$/src/SwiftPing.mxml" />
       </list>
     </option>
   </component>
@@ -158,7 +270,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,31 +321,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="export" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,7 +481,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.49969193" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -425,43 +515,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../libs/flex/frameworks/libs/advancedgrids.swc!/mx/controls/AdvancedDataGrid.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimAnnotator.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimAnnotatorEvents.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimController.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-          <folding />
+          <folding>
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820106000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimPlayer.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3405">
-          <folding />
+          <folding>
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820131000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/swiftping/export/CoronaExporter.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
-          <folding />
+          <folding>
+            <element signature="e#31#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -494,14 +577,24 @@
     <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimController.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-          <folding />
+          <folding>
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820106000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimPlayer.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3165">
-          <folding />
+          <folding>
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820131000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -527,67 +620,35 @@
     <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimController.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-          <folding />
+          <folding>
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820106000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimPlayer.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3165">
-          <folding />
+          <folding>
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820131000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../libs/flex/frameworks/libs/advancedgrids.swc!/mx/controls/AdvancedDataGrid.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimAnnotator.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimAnnotatorEvents.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimController.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2085">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/FrameSequence.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/Frame.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1935">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/RenderCompleteEvent.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="934">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/SwfRenderer.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1376" max-vertical-offset="2310">
           <folding />
         </state>
       </provider>
@@ -602,13 +663,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/shapes/Triangulator.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2475">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/swiftping/utils/calculateRelativePath.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
@@ -616,100 +670,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/IAnimPlugin.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/logcombo/LogComboBox.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="425" column="8" selection-start="11258" selection-end="11258" vertical-scroll-proportion="0.0" vertical-offset="5745" max-vertical-offset="6765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimPlayer.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TODO.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwiftPing.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <folding>
-            <marker date="1334646256000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1334646256000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1334646256000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1334646256000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1334646256000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1334646256000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1334646256000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/swiftping/View.mxml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="12" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-3.75" vertical-offset="300" max-vertical-offset="2175">
-          <folding>
-            <marker date="1391813774000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1391813774000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1391813774000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/Settings.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/utils/BindingDebugger.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <folding />
-        </state>
+        <state line="8" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.actionScriptProperties">
@@ -721,16 +711,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.project">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swiftping.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="540">
-          <folding />
-        </state>
+        <state line="12" column="16" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="540" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SwiftPing-app.xml">
@@ -747,19 +733,176 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/Controller.as">
+    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimAnnotator.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7560">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimAnnotatorEvents.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimController.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="1" selection-start="5086" selection-end="5086" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2190">
+          <folding>
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820106000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820106000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/AnimPlayer.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="15" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3315">
+          <folding>
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820131000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1391820131000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/CollisionEditor.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="6" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/animplayer/IAnimPlugin.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/swiftping/export/CoronaExporter.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="37" selection-start="615" selection-end="615" vertical-scroll-proportion="-1.2892442" vertical-offset="1187" max-vertical-offset="1875">
+        <state line="13" column="40" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1875">
           <folding>
             <element signature="e#31#59#0" expanded="true" />
-            <element signature="e#241#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/logcombo/LogComboBox.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="38" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/FrameSequence.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
+          <folding>
+            <element signature="e#34#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/Frame.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="8" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1905">
+          <folding>
+            <element signature="e#34#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/shapes/Triangulator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="42" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="1755" max-vertical-offset="2475">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/utils/BindingDebugger.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="36" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/utils/shallowCopyObject.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/utils/combinePaths.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/utils/dispatchPropertyChangeEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/utils/enumerateObjectProperties.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/utils/ExtendedObjectProxy.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="32" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/SwfRenderer.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1376" max-vertical-offset="2310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/Controller.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="9" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="7980">
+          <folding>
+            <element signature="e#24#55#0" expanded="true" />
+            <element signature="e#477#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/Settings.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="39" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwiftPing.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="28" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.63182527" vertical-offset="150" max-vertical-offset="960">
+          <folding>
+            <marker date="1391820363000" expanded="true" signature="323:401" placeholder="..." />
+            <marker date="1391820363000" expanded="true" signature="501:887" placeholder="{...}" />
+            <marker date="1391820363000" expanded="true" signature="944:1175" placeholder="{...}" />
+            <marker date="1391820363000" expanded="true" signature="1063:1136" placeholder="{...}" />
+            <marker date="1391820363000" expanded="true" signature="1150:1170" placeholder="{...}" />
+            <marker date="1391820363000" expanded="true" signature="1246:1560" placeholder="{...}" />
+            <marker date="1391820363000" expanded="true" signature="1327:1555" placeholder="{...}" />
           </folding>
         </state>
       </provider>
