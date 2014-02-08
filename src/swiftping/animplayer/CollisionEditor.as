@@ -1,25 +1,18 @@
 package swiftping.animplayer
 {
     import flash.display.BitmapData
+    import flash.display.Shape
+    import flash.events.Event
     import flash.events.EventDispatcher
     import flash.events.MouseEvent
     import flash.geom.Matrix
 
+    import swiftping.shapes.Triangulator
+    import swiftping.utils.dispatchPropertyChangeEvent
+
     public class CollisionEditor extends EventDispatcher implements IAnimPlugin
     {
-        import flash.events.Event
-        import flash.display.Shape
-        import flash.geom.Rectangle
-        import flash.geom.Point
-
-        import swiftping.shapes.Triangulator
-        import swiftping.utils.dispatchPropertyChangeEvent
-        import swiftping.utils.Log
-
-        ///////////////////////////////////////////////////////////////////////
-        // Public Properties
-
-        ;[Bindable] public var enabled:Boolean = false
+        [Bindable] public var enabled:Boolean = false
 
         public function CollisionEditor()
         {

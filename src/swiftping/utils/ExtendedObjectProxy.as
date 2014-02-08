@@ -7,7 +7,6 @@ package swiftping.utils
     import flash.utils.flash_proxy
 
     import mx.events.PropertyChangeEvent
-    import mx.events.PropertyChangeEventKind
     import mx.utils.ObjectProxy
     import mx.utils.object_proxy
 

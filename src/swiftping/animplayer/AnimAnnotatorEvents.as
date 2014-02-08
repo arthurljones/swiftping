@@ -1,7 +1,5 @@
 package swiftping.animplayer
 {
-    import flash.events.Event
-
     public class AnimAnnotatorEvents
     {
         public static const DRAW_REQUEST:String = "DrawRequest"

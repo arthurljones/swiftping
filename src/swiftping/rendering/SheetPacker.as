@@ -1,16 +1,13 @@
 package swiftping.rendering
 {
+    import flash.display.BitmapData
     import flash.geom.Point
     import flash.geom.Rectangle
 
-    import spark.primitives.BitmapImage
-    import spark.primitives.Rect
+    import swiftping.utils.Log
 
     public class SheetPacker
     {
-        import flash.display.BitmapData
-        import swiftping.utils.Log
-
         private var mSheet:BitmapData = null
         private var mWastedSpace:int = 0
         private var mUniques:FrameSequence = null

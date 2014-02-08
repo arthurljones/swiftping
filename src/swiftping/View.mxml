@@ -4,12 +4,10 @@
           xmlns:s="library://ns.adobe.com/flex/spark"
           xmlns:mx="library://ns.adobe.com/flex/mx"
           xmlns:ap="swiftping.animplayer.*"
-          xmlns:swiftping="swiftping.*"
-          xmlns:logcombo="swiftping.logcombo.*"
           width="1000" height="700"
           windowComplete="onWindowComplete()">
-	
-	<fx:Style>
+
+    <fx:Style>
 		@namespace s "library://ns.adobe.com/flex/spark";
 		@namespace mx "library://ns.adobe.com/flex/mx";
 		.VBoxOuterStyle { paddingLeft: 10; paddingRight:10; }
@@ -20,21 +18,23 @@
 	
 	<fx:Script>
 		<![CDATA[
-			import swiftping.utils.ExtendedObjectProxy;
-			import swiftping.utils.Log;
-			
-			[Bindable] public var mController:Controller = null;
-			[Bindable] public var mData:ExtendedObjectProxy = null;
-			
-			protected function onWindowComplete():void
-			{
-				Log.registerLogListener(function(text:String):void
-				{
-					logArea.text = text;
-					logArea.scrollToRange(text.length);
-				})
-			}
-		]]>
+        import swiftping.utils.ExtendedObjectProxy;
+        import swiftping.utils.Log;
+
+        [Bindable]
+        public var mController:Controller = null;
+        [Bindable]
+        public var mData:ExtendedObjectProxy = null;
+
+        protected function onWindowComplete():void
+        {
+            Log.registerLogListener(function (text:String):void
+            {
+                logArea.text = text;
+                logArea.scrollToRange(text.length);
+            })
+        }
+        ]]>
 	</fx:Script>
 	<s:states>
 		<s:State name="Default"/>

@@ -1,8 +1,6 @@
 package swiftping.rendering
 {
-    import flash.display.BitmapData
     import flash.events.Event
-    import flash.geom.Rectangle
 
     public class RenderCompleteEvent extends Event
     {

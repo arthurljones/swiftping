@@ -1,52 +1,34 @@
 package swiftping
 {
-    import flash.display.BitmapData
+    import flash.desktop.NativeApplication
     import flash.display.Screen
-    import flash.display.Sprite
+    import flash.events.Event
     import flash.events.EventDispatcher
+    import flash.events.IOErrorEvent
     import flash.events.TimerEvent
-    import flash.geom.Point
+    import flash.filesystem.File
+    import flash.net.FileFilter
     import flash.utils.Timer
 
-    import flashx.textLayout.tlf_internal
-
     import mx.collections.ArrayList
+    import mx.controls.Alert
     import mx.events.AIREvent
 
+    import swiftping.export.CoronaExporter
+    import swiftping.rendering.FrameSequence
+    import swiftping.rendering.RenderCompleteEvent
+    import swiftping.rendering.SheetPacker
+    import swiftping.rendering.SwfRenderer
     import swiftping.utils.ExtendedObjectProxy
+    import swiftping.utils.Log
+    import swiftping.utils.calculateRelativePath
+    import swiftping.utils.combinePaths
+    import swiftping.utils.getPathParent
+    import swiftping.utils.stripFilenameSuffix
+    import swiftping.utils.writePng
 
     public class Controller extends EventDispatcher
     {
-        import flash.desktop.NativeApplication
-
-        import flash.display.Sprite
-        import flash.events.Event
-        import flash.events.InvokeEvent
-        import flash.events.MouseEvent
-        import flash.events.IOErrorEvent
-        import flash.filesystem.File
-        import flash.media.SoundTransform
-        import flash.net.FileFilter
-
-        import mx.collections.ArrayCollection
-        import mx.controls.Alert
-        import mx.events.CloseEvent
-        import mx.utils.ObjectProxy
-
-        import swiftping.utils.calculateRelativePath
-        import swiftping.utils.combinePaths
-        import swiftping.utils.stripFilenameSuffix
-        import swiftping.utils.getPathParent
-        import swiftping.utils.writePng
-        import swiftping.utils.BindingDebugger
-        import swiftping.utils.Log
-
-        import swiftping.rendering.SwfRenderer
-        import swiftping.rendering.RenderCompleteEvent
-        import swiftping.rendering.SheetPacker
-        import swiftping.rendering.FrameSequence
-        import swiftping.export.CoronaExporter
-
         ///////////////////////////////////////////////////////////////////////
         // Public Properties
 

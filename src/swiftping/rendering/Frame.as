@@ -1,20 +1,17 @@
 package swiftping.rendering
 {
-    import flash.display.Bitmap
     import flash.display.BitmapData
     import flash.events.EventDispatcher
+    import flash.geom.Point
     import flash.geom.Rectangle
+
+    import mx.events.PropertyChangeEvent
+
+    import swiftping.utils.dispatchPropertyChangeEvent
 
     public dynamic class Frame extends EventDispatcher
     {
-        import flash.geom.Point
-        import mx.events.PropertyChangeEvent
-        import swiftping.utils.dispatchPropertyChangeEvent
-
-        ///////////////////////////////////////////////////////////////////////
-        // Public Properties and Accessors
-
-        ;[Bindable]
+        [Bindable]
         public var origin:Point = new Point(0, 0)
 
         ;[Bindable]

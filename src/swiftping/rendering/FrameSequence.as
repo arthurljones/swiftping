@@ -1,12 +1,11 @@
 package swiftping.rendering
 {
     import flash.display.BitmapData
+    import flash.geom.Point
     import flash.geom.Rectangle
 
     public dynamic class FrameSequence
     {
-        import flash.geom.Point
-
         public var frames:Vector.<Frame> = new Vector.<Frame>()
 
         //TODO: clone()

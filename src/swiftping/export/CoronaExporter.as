@@ -1,21 +1,21 @@
 package swiftping.export
 {
     import flash.filesystem.File
+    import flash.filesystem.FileMode
+    import flash.filesystem.FileStream
+    import flash.geom.Point
+    import flash.geom.Rectangle
 
+    import mx.utils.StringUtil
+
+    import swiftping.rendering.Frame
     import swiftping.rendering.FrameSequence
     import swiftping.shapes.Triangulator
     import swiftping.utils.ExtendedObjectProxy
+    import swiftping.utils.printf
 
     public class CoronaExporter
     {
-        import flash.geom.Point
-        import flash.geom.Rectangle
-        import flash.filesystem.FileStream
-        import flash.filesystem.FileMode
-        import mx.utils.StringUtil
-        import swiftping.rendering.Frame
-        import swiftping.utils.printf
-
         private var _output:String = ""
         private var _tabLevel:int = 0
         private var _dest:File = null

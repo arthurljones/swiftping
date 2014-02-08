@@ -1,21 +1,13 @@
 package swiftping
 {
-    import flash.events.EventDispatcher
     import flash.filesystem.File
-    import flash.geom.Point
-
-    import mx.utils.ObjectProxy
+    import flash.filesystem.FileMode
+    import flash.filesystem.FileStream
 
     import swiftping.utils.shallowCopyObject
 
     public class Settings extends Object
     {
-        import flash.filesystem.File
-        import flash.filesystem.FileStream
-        import flash.filesystem.FileMode
-        import mx.utils.ObjectUtil
-        import flash.utils.getQualifiedClassName
-
         public var relativeInput:String = ""
         public var relativeOutput:String = ""
         public var outputPrefix:String = ""

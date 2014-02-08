@@ -1,6 +1,7 @@
 package swiftping.utils
 {
     import flash.filesystem.File
+
     public function combinePaths(directory:String, relativePath:String):String
     {
         if (directory)

@@ -1,6 +1,7 @@
 package swiftping.utils
 {
     import flash.utils.describeType
+
     public function enumerateObjectProperties(object:Object):Array
     {
         var sourceInfo:XML = describeType(object)

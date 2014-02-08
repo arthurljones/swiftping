@@ -17,31 +17,27 @@
 	
 	<mx:Script>
 		<![CDATA[
-		
-		import swiftping.logcombo.enums.LogType;
+        override public function set data(value:Object):void
+        {
+            super.data = value;
+        }
 
-		override public function set data( value:Object ) :void
-		{
-			super.data = value;
-		}
-		
-		override protected function commitProperties() :void
-		{
-			super.commitProperties();
-			
-			if (data)
-			{
-				rIcon.source = data.logicon;
-				rText.text = data.timelog + data.label;
-				rText.toolTip = data.label;
-			}
-			
-			setStyle('horizontalGap', 5);
-			setStyle('verticalAlign', 'middle');
-			horizontalScrollPolicy = 'off';
-		}
-			
-		]]>
+        override protected function commitProperties():void
+        {
+            super.commitProperties();
+
+            if (data)
+            {
+                rIcon.source = data.logicon;
+                rText.text = data.timelog + data.label;
+                rText.toolTip = data.label;
+            }
+
+            setStyle('horizontalGap', 5);
+            setStyle('verticalAlign', 'middle');
+            horizontalScrollPolicy = 'off';
+        }
+        ]]>
 	</mx:Script>
 	
 	<mx:Image id="rIcon" scaleContent="true" />

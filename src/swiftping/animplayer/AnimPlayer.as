@@ -1,31 +1,23 @@
 package swiftping.animplayer
 {
+    import flash.display.BitmapData
+    import flash.display.Shape
+    import flash.events.Event
     import flash.events.EventDispatcher
+    import flash.events.MouseEvent
     import flash.events.TimerEvent
-    import flash.geom.Point
+    import flash.geom.Matrix
+    import flash.geom.Rectangle
+    import flash.utils.Timer
+    import flash.utils.getTimer
 
-    import mx.core.UIComponent
-
+    import swiftping.rendering.Frame
     import swiftping.rendering.FrameSequence
+    import swiftping.utils.dispatchPropertyChangeEvent
 
     public class AnimPlayer extends EventDispatcher implements IAnimPlugin
     {
-        import flash.display.BitmapData
-        import flash.display.Shape
-        import flash.events.Event
-        import flash.events.MouseEvent
-        import flash.geom.Matrix
-        import flash.geom.Rectangle
-        import flash.utils.getTimer
-        import flash.utils.Timer
-
-        import swiftping.rendering.Frame
-        import swiftping.utils.dispatchPropertyChangeEvent
-
-        ///////////////////////////////////////////////////////////////////////
-        // Public Properties
-
-        ;[Bindable]
+        [Bindable]
         public var referencePoint:Object = {x: 0, y: 0}
 
         ;[Bindable]

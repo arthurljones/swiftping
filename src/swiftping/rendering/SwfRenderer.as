@@ -1,27 +1,21 @@
 package swiftping.rendering
 {
+    import flash.display.BitmapData
+    import flash.display.Loader
+    import flash.display.MovieClip
+    import flash.events.Event
     import flash.events.EventDispatcher
+    import flash.events.IOErrorEvent
+    import flash.events.ProgressEvent
+    import flash.filesystem.File
+    import flash.geom.Matrix
+    import flash.geom.Point
+    import flash.system.LoaderContext
+
+    import swiftping.utils.Log
 
     public class SwfRenderer extends EventDispatcher
     {
-        import mx.controls.Alert
-        import flash.display.Loader
-        import flash.display.LoaderInfo
-        import flash.display.MovieClip
-        import flash.events.IOErrorEvent
-        import flash.filesystem.File
-        import flash.system.LoaderContext
-        import flash.utils.ByteArray
-        import flash.events.ProgressEvent
-        import flash.geom.Matrix
-        import flash.geom.Point
-        import flash.geom.Rectangle
-        import flash.display.BitmapData
-        import flash.display.MovieClip
-        import flash.events.Event
-
-        import swiftping.utils.Log
-
         ///////////////////////////////////////////////////////////////////////
         // Public Functions
 

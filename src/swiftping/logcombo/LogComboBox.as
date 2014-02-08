@@ -32,16 +32,16 @@
 package swiftping.logcombo
 {
     import flash.display.DisplayObject
-    import flash.events.Event
+
     import mx.controls.ComboBox
     import mx.core.ClassFactory
+    import mx.core.IFlexDisplayObject
     import mx.core.UIComponent
     import mx.events.DropdownEvent
     import mx.events.ListEvent
-    import mx.core.IFlexDisplayObject
 
-    import swiftping.logcombo.enums.TimeStamp
     import swiftping.logcombo.enums.LogType
+    import swiftping.logcombo.enums.TimeStamp
     import swiftping.logcombo.formatters.zeroFillFormatter
     import swiftping.logcombo.renderers.LogRenderer
 

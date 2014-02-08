@@ -1,12 +1,13 @@
 package swiftping.utils
 {
+    import flash.filesystem.File
+    import flash.filesystem.FileMode
+    import flash.filesystem.FileStream
+
+    import spark.formatters.DateTimeFormatter
+
     public class Log
     {
-        import flash.filesystem.File
-        import flash.filesystem.FileMode
-        import flash.filesystem.FileStream
-        import spark.formatters.DateTimeFormatter
-
         private static var sListeners:Vector.<Function> = new Vector.<Function>
         private static var sOut:FileStream = null
         private static var sSessionLog:String = ""

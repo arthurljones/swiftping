@@ -1,24 +1,19 @@
 package swiftping.animplayer
 {
+    import flash.display.BitmapData
+    import flash.events.Event
     import flash.events.EventDispatcher
+    import flash.events.MouseEvent
+    import flash.geom.Matrix
+    import flash.geom.Point
     import flash.geom.Rectangle
 
     import mx.events.PropertyChangeEvent
+    import mx.events.ResizeEvent
 
     public class AnimController extends EventDispatcher
     {
-        import flash.display.BitmapData
-        import flash.events.Event
-        import flash.events.MouseEvent
-        import flash.geom.Matrix
-        import flash.geom.Point
-
-        import mx.events.ResizeEvent
-
-        ///////////////////////////////////////////////////////////////////////
-        // Public Variables
-
-        ;[Bindable] public var clearColor:uint
+        [Bindable] public var clearColor:uint
         ;[Bindable] public var animPlayer:AnimPlayer = new AnimPlayer()
         ;[Bindable] public var collisionEditor:CollisionEditor = new CollisionEditor()
 
