@@ -64,12 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Controller.as" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Controller.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/swiftping/Controller.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="9" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="7980">
+            <state line="4" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.083333336" vertical-offset="0" max-vertical-offset="7980">
               <folding>
-                <element signature="e#24#55#0" expanded="true" />
                 <element signature="e#477#515#0" expanded="true" />
               </folding>
             </state>
@@ -85,18 +84,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwiftPing.mxml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SwiftPing.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SwiftPing.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="28" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.63182527" vertical-offset="150" max-vertical-offset="960">
+            <state line="12" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="825">
               <folding>
-                <marker date="1391820363000" expanded="true" signature="323:401" placeholder="..." />
-                <marker date="1391820363000" expanded="true" signature="501:887" placeholder="{...}" />
-                <marker date="1391820363000" expanded="true" signature="944:1175" placeholder="{...}" />
-                <marker date="1391820363000" expanded="true" signature="1063:1136" placeholder="{...}" />
-                <marker date="1391820363000" expanded="true" signature="1150:1170" placeholder="{...}" />
-                <marker date="1391820363000" expanded="true" signature="1246:1560" placeholder="{...}" />
-                <marker date="1391820363000" expanded="true" signature="1327:1555" placeholder="{...}" />
+                <marker date="1391820653000" expanded="true" signature="242:330" placeholder="..." />
+                <marker date="1391820653000" expanded="true" signature="421:833" placeholder="{...}" />
+                <marker date="1391820653000" expanded="true" signature="889:1178" placeholder="{...}" />
+                <marker date="1391820653000" expanded="true" signature="1020:1112" placeholder="{...}" />
+                <marker date="1391820653000" expanded="true" signature="1130:1168" placeholder="{...}" />
+                <marker date="1391820653000" expanded="true" signature="1248:1638" placeholder="{...}" />
+                <marker date="1391820653000" expanded="true" signature="1337:1628" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/swiftping/View.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="19" selection-start="846" selection-end="846" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="2190">
+              <folding>
+                <marker date="1391819856000" expanded="true" signature="846:913" placeholder="..." />
+                <marker date="1391819856000" expanded="true" signature="1086:1227" placeholder="{...}" />
+                <marker date="1391819856000" expanded="true" signature="1147:1221" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -133,7 +145,11 @@
         <entry file="file://$PROJECT_DIR$/src/swiftping/utils/dispatchPropertyChangeEvent.as">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <folding />
+              <folding>
+                <marker date="1391820299000" expanded="true" signature="24:484" placeholder="{...}" />
+                <marker date="1391820299000" expanded="false" signature="37:111" placeholder="..." />
+                <marker date="1391820299000" expanded="true" signature="222:482" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,17 +186,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrameSequence.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/swiftping/rendering/FrameSequence.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
-              <folding>
-                <element signature="e#34#65#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -333,7 +338,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="options.lastSelected" value="preferences.sourceCode.ActionScript" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -343,6 +348,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="LayoutCode.rearrangeEntriesMxml" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -543,7 +549,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
           <folding>
-            <element signature="e#31#59#0" expanded="true" />
+            <element signature="e#31#59#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -675,13 +681,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/View.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="12" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-3.75" vertical-offset="300" max-vertical-offset="2175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
@@ -789,7 +788,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="40" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1875">
           <folding>
-            <element signature="e#31#59#0" expanded="true" />
+            <element signature="e#31#59#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -814,7 +813,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="8" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1905">
           <folding>
-            <element signature="e#34#61#0" expanded="true" />
+            <element signature="e#34#61#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -850,7 +849,11 @@
     <entry file="file://$PROJECT_DIR$/src/swiftping/utils/dispatchPropertyChangeEvent.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding />
+          <folding>
+            <marker date="1391820299000" expanded="true" signature="24:484" placeholder="{...}" />
+            <marker date="1391820299000" expanded="false" signature="37:111" placeholder="..." />
+            <marker date="1391820299000" expanded="true" signature="222:482" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -875,12 +878,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/swiftping/Controller.as">
+    <entry file="file://$PROJECT_DIR$/src/SwiftPing.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="9" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="7980">
+        <state line="12" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="825">
           <folding>
-            <element signature="e#24#55#0" expanded="true" />
-            <element signature="e#477#515#0" expanded="true" />
+            <marker date="1391820653000" expanded="true" signature="242:330" placeholder="..." />
+            <marker date="1391820653000" expanded="true" signature="421:833" placeholder="{...}" />
+            <marker date="1391820653000" expanded="true" signature="889:1178" placeholder="{...}" />
+            <marker date="1391820653000" expanded="true" signature="1020:1112" placeholder="{...}" />
+            <marker date="1391820653000" expanded="true" signature="1130:1168" placeholder="{...}" />
+            <marker date="1391820653000" expanded="true" signature="1248:1638" placeholder="{...}" />
+            <marker date="1391820653000" expanded="true" signature="1337:1628" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -892,17 +900,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwiftPing.mxml">
+    <entry file="file://$PROJECT_DIR$/src/swiftping/View.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="28" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.63182527" vertical-offset="150" max-vertical-offset="960">
+        <state line="22" column="19" selection-start="846" selection-end="846" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="2190">
           <folding>
-            <marker date="1391820363000" expanded="true" signature="323:401" placeholder="..." />
-            <marker date="1391820363000" expanded="true" signature="501:887" placeholder="{...}" />
-            <marker date="1391820363000" expanded="true" signature="944:1175" placeholder="{...}" />
-            <marker date="1391820363000" expanded="true" signature="1063:1136" placeholder="{...}" />
-            <marker date="1391820363000" expanded="true" signature="1150:1170" placeholder="{...}" />
-            <marker date="1391820363000" expanded="true" signature="1246:1560" placeholder="{...}" />
-            <marker date="1391820363000" expanded="true" signature="1327:1555" placeholder="{...}" />
+            <marker date="1391819856000" expanded="true" signature="846:913" placeholder="..." />
+            <marker date="1391819856000" expanded="true" signature="1086:1227" placeholder="{...}" />
+            <marker date="1391819856000" expanded="true" signature="1147:1221" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/swiftping/Controller.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.083333336" vertical-offset="0" max-vertical-offset="7980">
+          <folding>
+            <element signature="e#477#515#0" expanded="true" />
           </folding>
         </state>
       </provider>
